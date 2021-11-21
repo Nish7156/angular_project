@@ -27,7 +27,7 @@ export class ServerComponent {
         this.servername = (<HTMLInputElement>event.target).value;
     }
 
-    //Assignment
+    //Assignment Two way binding
 
     username = "";
 }
