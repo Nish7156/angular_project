@@ -33,10 +33,15 @@
         <h1 for="">Assignment-3</h1>
         <br>
         
-        <button class="btn btn-primary" (click)="onToggleDisplay()" >Show Details</button> 
-        <p *ngIF="showSecret">secret password=Nish</p>   
-        <div *ngFor="let item of log" 
-        [ngStyle]="{'color':item.color}"
-        >{{ item }}</div>  
-    </div>
-  </div>
+       <!--<button class="btn btn-primary" (click)="showSecret = !showSecret">Display
+Details</button>-->
+<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+<p *ngIf="showSecret">Secret Password = Nish</p>
+<div
+*ngFor="Let logItem of log"
+[ngStyle)="{backgroundColor: logItem >= 5 ? 'blue': 'transparent')."
+IngClass}="{'white-text': logItem >= 5)"
+>{{ logItem }}</div>
+</div>
+</div>
+

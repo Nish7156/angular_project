@@ -35,7 +35,7 @@ export class ServerComponent {
      showSecret = false;
      log=[];
 
-     onToggleDisplay() {
+     onToggleDetails() {
         this.showSecret = !this.showSecret;
         this.log.push(this.log.length + 1);
      }
