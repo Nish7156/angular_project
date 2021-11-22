@@ -30,4 +30,13 @@ export class ServerComponent {
     //Assignment Two way binding
 
     username = "";
+
+     //Assignment 3
+     showSecret = false;
+     log=[];
+
+     onToggleDisplay() {
+        this.showSecret = !this.showSecret;
+        this.log.push(this.log.length + 1);
+     }
 }

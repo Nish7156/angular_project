@@ -22,10 +22,21 @@
         <label for="">UserName</label>
         <input type="text" class="form-control" [(ngModel)]="username"  >
         <p>{{ username }}</p>
-        <button class="btn btn-primary" [disabled]="username ===''" (click)="username =''" >Reset User</button>
+        <button class="btn btn-primary" [disabled]="username ===''" (click)="username =''" >Reset User</button>      
+    </div>
+  </div>
+<br><br>
+   <!--Assignment3-->
+   <div class="container">
+    <div class="row">
+        <div class="col-xl-12"></div>
+        <h1 for="">Assignment-3</h1>
+        <br>
         
-
-        
-          
+        <button class="btn btn-primary" (click)="onToggleDisplay()" >Show Details</button> 
+        <p *ngIF="showSecret">secret password=Nish</p>   
+        <div *ngFor="let item of log" 
+        [ngStyle]="{'color':item.color}"
+        >{{ item }}</div>  
     </div>
   </div>
