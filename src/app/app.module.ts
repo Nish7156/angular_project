@@ -8,6 +8,8 @@ import { ServerComponent } from './server/server.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { ComponentNameComponent } from './component-name/component-name.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { ComponentNameComponent } from './component-name/component-name.componen
     WarningAlertComponent,
     SuccessAlertComponent,
     ComponentNameComponent,
+    ServerElementComponent,
+    CockpitComponent
 
   ],
   imports: [
